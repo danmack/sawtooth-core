@@ -39,7 +39,6 @@ class TestIntegration(unittest.TestCase):
         try:
             print "Launching validator network."
             vnm_config = defaultValidatorConfig.copy()
-            vnm_config['LogLevel'] = 'DEBUG'
 
             vnm = ValidatorNetworkManager(http_port=9000, udp_port=9100,
                                           cfg=vnm_config)
